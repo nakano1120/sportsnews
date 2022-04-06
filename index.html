@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang=ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color:#fff;
+            background-color:#000;
+        }
+        #main{
+            padding:0;
+            margin:0;
+            display:inline-block;
+            text-align:center;
+            width:100%;
+        }
+        #info{
+            display:inline-block;
+            text-align:center;
+        }
+        .mid0{
+            padding:1vw 1vw;
+            font-size:3vw;
+            border-top:1px solid #aaa;
+            border-left:1vw solid #aaa;
+        }
+        .mid1{
+            padding:1vw 1vw;
+            border-top:1px solid #aaa;
+            font-size:3vw;
+        }
+        .mid01{
+            font-size:3vw;
+        }
+        .mid2{
+            font-size:2.5vw;
+        }
+        .mid3{
+            font-size:2vw;
+        }
+        .mid4{
+            font-size:1.5vw;
+        }
+        .mid5{
+            font-size:1vw;
+        }
+        .mid6{
+            font-size:0.8vw;
+        }
+        #menulist{
+            float:left;
+            width:25%;
+            padding:3vw 0;
+        }
+        #vslist{
+            float:left;
+            width:6.25%;
+            padding:1vw 0;
+        }
+        .selectmenu{
+            background-color:#999;
+        }
+        .graymenu{
+            color:#aaa;
+        }
+        .leftdb{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(52, 144, 255) ;
+        }
+        .leftg{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(255, 143, 52) ;
+        }
+        .leftc{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(255, 52, 52) ; 
+        }
+        .leftt{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(255, 252, 52) ;
+        }
+        .leftd{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(29, 7, 192) ;
+        }
+        .lefty{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(13, 118, 9) ;
+        }
+        .lefth{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(255, 217, 0) ;
+        }
+        .leftb{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(100, 9, 161) ;
+        }
+        .lefte{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(161, 9, 44) ;
+        }
+        .leftl{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(25, 0, 99) ;
+        }
+        .leftm{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(139, 139, 139) ;
+        }
+        .leftf{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1vw solid rgb(52, 115, 174) ;
+        }
+        .leftn{
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1px solid #aaa;
+        }
+        .leftnl{
+            float:left;
+            padding:0 1vw;
+            margin-left:1vw;
+            border-left: 1px solid #aaa;
+        }
+        .battlel{
+            float:left;
+            width:43vw;
+            text-align:center;
+        }
+        .bat{
+            float:left;
+            width:3vw;
+            padding-right:2vw;
+            text-align:center;
+        }
+        .field{
+            float:left;
+            width:8vw;
+            text-align:center; 
+            border-left: 2px solid #aaa;
+        }
+        .namel{
+            float:left;
+            width:28vw;
+            padding:0 1vw;
+            border-left: 5px solid rgb(0, 187, 255);
+        }
+        .namer{
+            float:left;
+            width:28vw;
+            padding:0 1vw;
+            border-left: 5px solid rgb(255, 0, 119);
+        }
+        .namec{
+            float:left;
+            width:28vw;
+            padding:0 1vw;
+            border-left: 5px solid rgb(17, 92, 36);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="info">
+            <span class="mid2">阪神 vs DeNA</span><br>
+            <span class="mid4">4月6日(水) 18:00 甲子園</span>
+        </div>
+        <div id="menu">
+            <span id="menulist" class="mid2 selectmenu">トップ</span>
+            <span id="menulist" class="mid2 graymenu">速報</span>
+            <span id="menulist" class="mid2">経過</span>
+            <span id="menulist" class="mid2 graymenu">情報</span>
+        </div>
+        <div id="vsmenu">
+            <span id="vslist" class="mid2 graymenu">　</span>
+            <span id="vslist" class="mid2 graymenu">１</span>
+            <span id="vslist" class="mid2 graymenu">２</span>
+            <span id="vslist" class="mid2 graymenu">３</span>
+            <span id="vslist" class="mid2 graymenu">４</span>
+            <span id="vslist" class="mid2 graymenu">５</span>
+            <span id="vslist" class="mid2 graymenu">６</span>
+            <span id="vslist" class="mid2 graymenu">７</span>
+            <span id="vslist" class="mid2 graymenu">８</span>
+            <span id="vslist" class="mid2 graymenu">９</span>
+            <span id="vslist" class="mid2 graymenu">10</span>
+            <span id="vslist" class="mid2 graymenu">11</span>
+            <span id="vslist" class="mid2 graymenu">12</span>
+            <span id="vslist" class="mid2 graymenu">計</span>
+            <span id="vslist" class="mid2 graymenu">安</span>
+            <span id="vslist" class="mid2 graymenu">失</span>
+        </div>
+        <div id="vsmenu">
+            <span id="vslist" class="mid2 graymenu">デ</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+        </div>
+        <div id="vsmenu">
+            <span id="vslist" class="mid2 graymenu">神</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+            <span id="vslist" class="mid2 graymenu">0</span>
+        </div>
+        <br>
+    </div>
+    <div id="txtzone">
+        <div class="mid0">責任投手</div>
+        <div class="mid1">勝<span class="leftdb">伊勢 大夢<span class="graymenu">(1勝0敗0S)</span></span></div>
+        <div class="mid1">負<span class="leftt">齋藤 友貴哉<span class="graymenu">(0勝1敗0S)</span></span></div>
+        <div class="mid1">Ｓ<span class="leftn"></span></div>
+
+        <div class="mid0">本塁打</div>
+        <div class="mid1">デ<span class="leftdb"></span></div>
+        <div class="mid1">神<span class="leftt"></span></div>
+
+        <div class="mid0">戦評</div>
+        <div class="mid01">
+            2回戦(阪神1勝1敗0分)<br>
+            DeNAは1点ビハインドの9回表、2死二塁から牧の適時打が飛び出し、土壇場で同点とする。そのまま迎えた延長12回には。打者9人の猛攻で一挙5点を奪い、試合を決めた。投げては、6番手・伊勢が今季初勝利。敗れた阪神は、打線が中盤以降の好機を生かせなかった。
+        </div>
+
+        <div class="mid0">バッテリー</div>
+        <div class="mid1">デ<span class="leftdb">石田、砂田、エスコバー、三嶋、田中健、伊勢、山﨑 - 戸柱</span></div>
+        <div class="mid1">神<span class="leftt">伊藤将、岩崎、湯浅、齋藤、桐敷、馬場 - 坂本、梅野</span></div>
+
+        <div class="mid0">スターティングメンバー</div>
+        <div class="mid1">
+            <span class="battlel leftt">
+                阪神
+            </span>
+            <span class="battlel">
+                DeNA
+            </span>
+            <span class="leftdb"></span>
+        </div>
+        <div class="mid1">
+            <span class="bat">1</span>
+            <span class="field">中</span>
+            <span class="namel">近本 光司</span>
+            <span class="bat">1</span>
+            <span class="field">中</span>
+            <span class="namer">桑原 将志</span>
+            <br>
+        </div>
+        
+        <div class="mid1">
+            <span class="bat">2</span>
+            <span class="field">遊</span>
+            <span class="namel">中野 拓夢</span>
+            <span class="bat">2</span>
+            <span class="field">右</span>
+            <span class="namel">楠本 泰史</span>
+            <br>
+        </div>
+        
+        <div class="mid1">
+            <span class="bat">3</span>
+            <span class="field">左</span>
+            <span class="namel">糸井 嘉男</span>
+            <span class="bat">3</span>
+            <span class="field">一</span>
+            <span class="namel">佐野 恵太</span>
+            <br>
+        </div>
+        
+        <div class="mid1">
+            <span class="bat">4</span>
+            <span class="field">右</span>
+            <span class="namel">佐藤 輝明</span>
+            <span class="bat">4</span>
+            <span class="field">二</span>
+            <span class="namer">牧 秀悟</span>
+            <br>
+        </div>
+
+        <div class="mid1">
+            <span class="bat">5</span>
+            <span class="field">一</span>
+            <span class="namer">大山 悠輔</span>
+            <span class="bat">5</span>
+            <span class="field">三</span>
+            <span class="namer">宮崎 敏郎</span>
+            <br>
+        </div>
+
+        <div class="mid1">
+            <span class="bat">6</span>
+            <span class="field">三</span>
+            <span class="namel">糸原 健斗</span>
+            <span class="bat">6</span>
+            <span class="field">遊</span>
+            <span class="namer">大和</span>
+            <br>
+        </div>
+
+        <div class="mid1">
+            <span class="bat">7</span>
+            <span class="field">捕</span>
+            <span class="namer">坂本 誠志郎</span>
+            <span class="bat">7</span>
+            <span class="field">左</span>
+            <span class="namel">関根 大気</span>
+            <br>
+        </div>
+        
+        <div class="mid1">
+            <span class="bat">8</span>
+            <span class="field">二</span>
+            <span class="namel">小幡 竜平</span>
+            <span class="bat">8</span>
+            <span class="field">捕</span>
+            <span class="namel">戸柱 恭孝</span>
+            <br>
+        </div>
+                
+        <div class="mid1">
+            <span class="bat">9</span>
+            <span class="field">投</span>
+            <span class="namel">伊藤 将司</span>
+            <span class="bat">9</span>
+            <span class="field">投</span>
+            <span class="namel">石田 健大</span>
+            <br>
+        </div>
+
+        <div class="mid1" style="display:none">
+            <span class="bat">　</span>
+            <span class="field">投</span>
+            <span class="namel"></span>
+            <span class="bat">　</span>
+            <span class="field">投</span>
+            <span class="namel"></span>
+            <br>
+        </div>  
+
+    </div>
+</body>
+</html>
